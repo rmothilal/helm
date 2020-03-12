@@ -24,7 +24,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/api/index.js"]'
           service:
@@ -110,6 +110,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -207,7 +208,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--prepare"]'
           service:
@@ -293,6 +294,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -397,7 +399,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--admin"]'
           service:
@@ -483,6 +485,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -587,7 +590,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--position"]'
           service:
@@ -673,6 +676,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -777,7 +781,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--get"]'
           service:
@@ -863,6 +867,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -967,7 +972,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--fulfil"]'
           service:
@@ -1053,6 +1058,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -1157,7 +1163,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--timeout"]'
           service:
@@ -1243,6 +1249,7 @@ central:
         db_reap_interval_millis: 1000
         db_create_retry_interval_millis: 200
         db_debug: false
+        db_retries: 5
 
         ## Log Configuration
         log_level: info
@@ -3486,7 +3493,7 @@ simulator:
 
   image:
     repository: mojaloop/simulator
-    tag: v9.3.2
+    tag: v9.3.3
     pullPolicy: Always
 
   imagePullSecrets: []
@@ -4067,7 +4074,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkprepare"]'
           service:
@@ -4232,7 +4239,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkfulfil"]'
           service:
@@ -4397,7 +4404,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.0
+            tag: v9.3.1
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkprocessing"]'
           service:
