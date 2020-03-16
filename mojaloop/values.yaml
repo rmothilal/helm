@@ -24,7 +24,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/api/index.js"]'
           service:
@@ -208,7 +208,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--prepare"]'
           service:
@@ -399,7 +399,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--admin"]'
           service:
@@ -590,7 +590,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--position"]'
           service:
@@ -781,7 +781,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--get"]'
           service:
@@ -972,7 +972,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--fulfil"]'
           service:
@@ -1163,7 +1163,7 @@ central:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--timeout"]'
           service:
@@ -2661,7 +2661,7 @@ account-lookup-service:
       api:
         image:
           repository: mojaloop/account-lookup-service
-          tag: v9.3.2
+          tag: v9.3.1
           pullPolicy: Always
           command: '["node", "src/index.js", "server", "--api"]'
         service:
@@ -2672,7 +2672,7 @@ account-lookup-service:
       admin:
         image:
           repository: mojaloop/account-lookup-service
-          tag: v9.3.2
+          tag: v9.3.1
           pullPolicy: Always
           command: '["node", "src/index.js", "server", "--admin"]'
         service:
@@ -2791,7 +2791,7 @@ account-lookup-service:
       api:
         image:
           repository: mojaloop/account-lookup-service
-          tag: v9.3.2
+          tag: v9.3.1
           pullPolicy: Always
           command: '["node", "src/index.js", "server", "--api"]'
         service:
@@ -2802,7 +2802,7 @@ account-lookup-service:
       admin:
         image:
           repository: mojaloop/account-lookup-service
-          tag: v9.3.2
+          tag: v9.3.1
           pullPolicy: Always
           command: '["node", "src/index.js", "server", "--admin"]'
         service:
@@ -3493,7 +3493,7 @@ simulator:
 
   image:
     repository: mojaloop/simulator
-    tag: v9.3.3
+    tag: v9.3.2-snapshot
     pullPolicy: Always
 
   imagePullSecrets: []
@@ -3700,7 +3700,7 @@ finance-portal:
       port: 80
     image:
       repository: mojaloop/finance-portal-ui
-      tag: v9.3.4
+      tag: v9.3.2
       pullPolicy: Always
       port: 80
     ingress:
@@ -4074,7 +4074,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkprepare"]'
           service:
@@ -4239,7 +4239,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkfulfil"]'
           service:
@@ -4404,7 +4404,7 @@ mojaloop-bulk:
         api:
           image:
             repository: mojaloop/central-ledger
-            tag: v9.3.1
+            tag: v9.3.15-snapshot
             pullPolicy: Always
             command: '["node", "src/handlers/index.js", "handler", "--bulkprocessing"]'
           service:
